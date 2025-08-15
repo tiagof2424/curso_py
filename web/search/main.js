@@ -1,8 +1,8 @@
 import data from "./data.js";
 
-const d = document
-const $ = s => d.querySelector(s)
-const $$ = s => d.querySelectorAll(s)
+export const d = document
+export const $ = s => d.querySelector(s)
+export const $$ = s => d.querySelectorAll(s)
 
 const formSearch = $(".form-search")
 const contentCard = $(".content-card")
