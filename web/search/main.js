@@ -8,7 +8,7 @@ const formSearch = $(".form-search")
 const contentCard = $(".content-card")
 
 // funcion que crea una tabla con contenido dinamico
-function createTable () {
+export function createTable () {
 
     let tr = ""
     data.forEach( el =>{
