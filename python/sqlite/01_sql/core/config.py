@@ -26,3 +26,19 @@ filename_db = "example"
 
 #comprobar que el archivo contenga la extension .db 
 filename_db = str(Path(filename_db).with_suffix(".db").stem + ".db")
+full_path_file_db = os.path.join(full_path_db,filename_db)
+
+#crear la carpeta donde guardaremos el archivo excel
+folder_excel = "public/excel"
+path_excel_folder = os.path.join((cwd + "/python/sqlite/01_sql"), folder_excel)
+
+#crear
+# la carpeta si no existe
+if not os.path.exists(path_excel_folder):
+    os.makedirs(path_excel_folder)
+
+#crear el archivo excel
+filename_excel = "example"
+#comprobar que tenga el subfijo .xlsx
+filename_excel = str(Path(filename_excel).with_suffix(".xlsx").stem + ".xlsx")
+full_path_file_excel = os.path.join(path_excel_folder,filename_excel) 
